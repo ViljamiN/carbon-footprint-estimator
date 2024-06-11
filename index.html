@@ -1,0 +1,44 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Logger</title>
+</head>
+<body>
+    <h1>Purchase Logger</h1>
+    
+    <div>
+        <label for="userMessage">Enter your purchase details:</label>
+        <input type="text" id="userMessage" placeholder="e.g., Bought 2 organic vegetables on 2023-01-01">
+
+        <button type="button" onclick="processUserMessage()">Log Purchase</button>
+    </div>
+
+    <div id="result"></div>
+
+    <script>
+        function processUserMessage() {
+            const userMessage = document.getElementById('userMessage').value;
+
+            // Call Python script (replace 'placeholder-api-endpoint' with your actual endpoint)
+            fetch('placeholder-api-endpoint', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ userMessage }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('result').innerText = data.message;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>
