@@ -12,14 +12,12 @@ The Carbon Footprint Estimator is a tool that allows users to estimate the carbo
 - **Calculate CO2 Footprint:** Calculate the total estimated CO2 footprint for all added purchases.
 - **Logging:** Each purchase, along with its CO2 footprint, is logged for reference.
 
-## Getting Started
-
-### Prerequisites
+## Prerequisites
 
 - Python (version 3.6 or newer)
 - [OpenAI GPT-3.5 Turbo API Key](https://platform.openai.com/signup)
 
-### Installation and Usage
+## Installation and Usage
 
 1. Clone the repository:
 
