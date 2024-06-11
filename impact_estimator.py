@@ -19,7 +19,7 @@ class CarbonFootprintEstimator:
             api_key = input("Enter your OpenAI API key: ")
             if not api_key:
                 print("Error: OpenAI API key not found. Exiting.")
-            return
+                return
 
         client = OpenAI(api_key=api_key)
 
