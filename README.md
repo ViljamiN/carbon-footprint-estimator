@@ -16,8 +16,8 @@ The Carbon Footprint Estimator is a tool that allows users to estimate the carbo
 
 ### Prerequisites
 
-- Python (version X.X.X)
-- [OpenAI GPT-3.5 Turbo API Key](https://beta.openai.com/signup/)
+- Python (version 3.6 or newer)
+- [OpenAI GPT-3.5 Turbo API Key](https://platform.openai.com/signup)
 
 ### Installation
 
