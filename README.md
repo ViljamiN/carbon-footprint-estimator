@@ -1,4 +1,4 @@
-# Purchase Carbon Footprint Estimator
+# Carbon Footprint Estimator
 
 ![Logo](/PCFE.jpg)
 
